@@ -1,0 +1,23 @@
+{
+  "name": "zonnebril",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimDorsman/zonnebril.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TimDorsman/zonnebril/issues"
+  },
+  "homepage": "https://github.com/TimDorsman/zonnebril#readme",
+  "dependencies": {
+    "netlify": "^2.4.1",
+    "pokemon": "^1.2.3"
+  }
+}
