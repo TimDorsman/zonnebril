@@ -3,7 +3,6 @@ fetch(url)
 .then(res => res.json())
 .then(data => {
 	const { current } = data;
-	console.log(current);
 	const result = document.querySelector('.result');
 	const clouds = document.querySelector('.clouds');
 	const temp = document.querySelector('.temp');

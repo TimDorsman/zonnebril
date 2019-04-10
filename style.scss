@@ -18,6 +18,12 @@ body {
 	height: auto;
 	display: block;
 	margin: 50px auto;
+
+	@media screen and (max-width: 640px) {
+		width: 100%;
+		max-width: 300px;
+		max-height: 300px;
+	}
 }
 
 .main {
