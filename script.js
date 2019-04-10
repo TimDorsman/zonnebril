@@ -13,7 +13,7 @@ fetch(url)
 	else
 		clouds.innerHTML = `Er zijn <b>${current.cloud}</b> wolken in de lucht`;
 
-	if(current.condition.text === 'Sunny' ** current.temp_c > 12) {
+	if(current.condition.text === 'Sunny' && current.temp_c > 12) {
 		result.setAttribute('src', 'images/trump.png');
 	}
 	else {
