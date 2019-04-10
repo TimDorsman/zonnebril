@@ -44,3 +44,11 @@ body {
   right: 10px;
   font-style: italic;
 }
+
+.clouds {
+  text-align: center;
+}
+
+.temp {
+  text-align: center;
+}
