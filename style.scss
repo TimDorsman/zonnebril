@@ -27,12 +27,17 @@ body {
 	box-sizing: border-box;
 	border-radius: 9px;
 	position: relative;
+	transition: background-color 1s linear, transform .5s linear;
+	&:hover {
+		background-color: #f8f4f4;
+		transform: scale(1.03);
+	}
 }
 
 .owner {
 	position: absolute;
 	bottom: 10px;
 	right: 10px;
-	font-style: italic; 	
+	font-style: italic;
 }
 
