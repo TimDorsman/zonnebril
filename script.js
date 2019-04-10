@@ -8,9 +8,9 @@ fetch(url)
 	const result = document.querySelector('.result');
 
 	if(current.condition.text === 'Sunny') {
-		result.innerText = 'Ja';
+		result.setAttribute('src', 'images/trump.png');
 	}
 	else {
-		result.innerText = 'Nee';
+		result.setAttribute('src', 'images/rip.png');
 	}
 })
