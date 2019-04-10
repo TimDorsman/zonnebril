@@ -1,5 +1,3 @@
-const pokemon = require('pokemon');
-
 const url = 'http://api.apixu.com/v1/current.json?key=3a3ab57674994be3977143414190904&q=zoetermeer';
 fetch(url)
 .then(res => res.json())
