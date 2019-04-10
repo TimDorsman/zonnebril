@@ -9,9 +9,9 @@ fetch(url)
 	const temp = document.querySelector('.temp');
 
 	if(current.cloud == 1)
-		clouds.innerHTML = `There is ${current.cloud} cloud in the sky`;
+		clouds.innerHTML = `Er is ${current.cloud} wolk in de lucht`;
 	else
-		clouds.innerHTML = `There are <b>${current.cloud}</b> clouds in the sky`;
+		clouds.innerHTML = `Er zijn <b>${current.cloud}</b> wolken in de lucht`;
 
 	if(current.condition.text === 'Sunny' ** current.temp_c > 12) {
 		result.setAttribute('src', 'images/trump.png');
@@ -25,25 +25,5 @@ fetch(url)
 
 
 function temperature(temp) {
-	switch(temp) {
-		case 1:
-			return `Thats cold as hell`;
-		break;
-
-		case 2:
-			return `Might wanna wear a jacket!`
-		break;
-
-		case 3:
-			return `3 is always better than 2`
-		break;
-
-		case 4:
-			return `4 is the normal amount in The Netherlands`
-		case 5: 
-			return `It's still a bit cold but its good and nice`;
-		break;
-		default:
-			return `${temp} degrees outside`;
-	}
+	return `Het is ${temp} graden buiten`;
 }
