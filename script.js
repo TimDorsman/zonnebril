@@ -2,8 +2,7 @@ const url = 'https://api.apixu.com/v1/current.json?key=3a3ab57674994be3977143414
 fetch(url)
 .then(res => res.json())
 .then(data => {
-	console.log(data);
-	const { current, location } = data;
+	const { current } = data;
 
 	const result = document.querySelector('.result');
 
