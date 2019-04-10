@@ -60,3 +60,14 @@ body {
 .temp {
   text-align: center;
 }
+
+.secretBtn {
+  width: 173px;
+  height: 80px;
+  display: block;
+}
+
+.key, .code {
+  color: #e5ff00;
+  word-wrap: break-word;
+}
