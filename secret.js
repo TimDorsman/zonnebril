@@ -11,13 +11,11 @@ const input = document.querySelector('.inputCode');
 const btn = document.querySelector('.secretBtn');
 const code = document.querySelector('.code');
 
-
-
 btn.addEventListener('click', start);
 
 function createEncryption() {
 	for(i = 0; i < p.length; i++) {
-		let random = Math.floor(Math.random() * letters.length);
+		const random = Math.floor(Math.random() * letters.length);
 		guessString.push(letters[random])
 		let newGuessString = guessString.toString().replace(/,/g, '')
 		document.querySelector('.key').innerText = newGuessString;
@@ -29,10 +27,10 @@ function changeEncryption() {
 	guessString.forEach((letter, i) => {
 		//If the letter is not the same as the other letter of the same index, then change it.
 		if(letter !== codeString[i]) {
-			let random = Math.floor(Math.random() * letters.length);
+			const random = Math.floor(Math.random() * letters.length);
 			guessString.splice(i, 1, letters[random]);
 
-			let newGuessString = guessString.toString().replace(/,/g, '')
+			const newGuessString = guessString.toString().replace(/,/g, '')
 			document.querySelector('.key').innerText = newGuessString;
 			correct = 0;
 		}
@@ -56,6 +54,3 @@ function start() {
 	createEncryption();
 	id = setInterval(changeEncryption, 100);
 }
-
-
-// createEncryption();
