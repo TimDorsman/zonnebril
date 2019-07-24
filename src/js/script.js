@@ -13,10 +13,10 @@ fetch(url)
 		clouds.innerHTML = `Er zijn <b>${current.cloud}</b> wolken in de lucht`;
 
 	if(current.condition.text === 'Sunny') {
-		result.setAttribute('src', 'images/trump.png');
+		result.setAttribute('src', './src/images/trump.png');
 	}
 	else {
-		result.setAttribute('src', 'images/rip.png');
+		result.setAttribute('src', './src/images/rip.png');
 	}
 
 	temp.innerText = temperature(current.temp_c);
